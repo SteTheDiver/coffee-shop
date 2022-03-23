@@ -7,6 +7,9 @@ import Coffee from "./pages/Coffee";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
 function App() {
   return (
     <BrowserRouter>
