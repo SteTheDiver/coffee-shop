@@ -67,7 +67,7 @@ $main-font: "Kodchasan";
       }
 
       .Text {
-        position: absolute;
+        position: relative;
         bottom: 0;
         left: 0;
         font-family: "Kodchasan";
@@ -87,12 +87,15 @@ $main-font: "Kodchasan";
       }
 
       .ImageContainer {
+        display: flex;
+        flex-direction: column;
         position: relative;
         width: 100%;
 
         > img {
           opacity: 1;
-          border-radius: 4px;
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
           width: 100%;
         }
       }
@@ -100,6 +103,14 @@ $main-font: "Kodchasan";
       @media screen and (min-width: 600px) {
         .ImageContainer {
           height: 50%;
+
+          > img {
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+          }
+        }
+        .Text {
+          position: absolute;
         }
       }
     }
