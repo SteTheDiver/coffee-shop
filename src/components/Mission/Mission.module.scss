@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+.Mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+
+  .Title {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 1000px;
+
+    .Info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: fit-content;
+    }
+
+    .Text {
+      font-family: "Kodchasan";
+      font-size: 15px;
+      font-weight: 400;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .ImageContainer {
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 5px 10px 15px grey;
+
+      .Image {
+        height: 15em;
+        margin-left: 0;
+        object-fit: cover;
+        border-radius: 5px;
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      .Text {
+        width: 80%;
+        text-align: left;
+      }
+
+      .ImageContainer {
+        border-radius: 5px;
+        box-shadow: 5px 10px 15px grey;
+        width: 100%;
+
+        .Image {
+          // margin-left: 30px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .Container {
+      flex-direction: row;
+      // align-items: ;
+    }
+  }
+}
