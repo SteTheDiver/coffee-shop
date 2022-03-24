@@ -1,5 +1,6 @@
 import React from "react";
 
+import Gallery from "../components/Gallery/Gallery";
 import Hero from "../components/Hero/Hero";
 import Menu from "../components/Menu/Menu";
 
@@ -8,6 +9,7 @@ function Home() {
     <div>
       <Hero />
       <Menu />
+      <Gallery />
     </div>
   );
 }
