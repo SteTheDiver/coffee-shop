@@ -37,12 +37,6 @@ function Navbar() {
                   <Link to={url} className={styles.Item} onClick={toggleLinks}>
                     <span className={styles.Item}>{text}</span>
                   </Link>
-                  {/* <a
-                    href={url}
-                    className={styles.Item}
-                  >
-                    {text}
-                  </a> */}
                 </li>
               );
             })}
