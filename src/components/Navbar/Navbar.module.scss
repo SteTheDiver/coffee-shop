@@ -103,8 +103,12 @@
       }
 
       @media only screen and (min-width: 900px) {
-        .Link {
+        .Link:not(:first-of-type) {
           margin-left: 2em;
+          margin-top: 0;
+        }
+        .Link:first-of-type {
+          // margin-left: 2em;
           margin-top: 0;
         }
       }
@@ -121,6 +125,13 @@
 
   @media screen and (min-width: 900px) {
     .HeaderContainer {
+      max-width: 1200px;
+      width: 95%;
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    .HeaderContainer {
+      max-width: 1400px;
       width: 80%;
     }
   }
