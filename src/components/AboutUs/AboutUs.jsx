@@ -20,9 +20,9 @@ function AboutUs() {
                 >
                   <h3 className={styles.Title}>{title}</h3>
                 </div>
-                <span className={styles.Text}>{description}</span>
                 <div className={styles.ImageContainer}>
                   <img src={image} alt={title} />
+                  <span className={styles.Text}>{description}</span>
                 </div>
               </article>
             );
