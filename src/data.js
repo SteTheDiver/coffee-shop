@@ -19,11 +19,6 @@ export const links = [
     url: "/contact",
     text: "Contact",
   },
-  {
-    id: 5,
-    url: "/profile",
-    text: "Profile",
-  },
 ];
 
 export const products = [
