@@ -1,7 +1,8 @@
 import React from "react";
+import CoffeeList from "../components/CoffeeList/CoffeeList";
 
 function Coffee() {
-  return <div>Coffee</div>;
+  return <CoffeeList />;
 }
 
 export default Coffee;
