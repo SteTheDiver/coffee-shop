@@ -1,0 +1,114 @@
+.Contacts {
+    // padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin: 0 auto;
+    padding-top: 80px;
+  
+    .Title {
+      margin: 50px;
+      font-weight: 600;
+    }
+  
+    .Subheding {
+      font-size: 1em;
+      max-width: 900px;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .Container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      align-content: space-between;
+      // margin: 0 auto;
+      width: 100%;
+      padding: 20px 20px;
+      // color: white;
+      color: black;
+  
+      .Info {
+        background-image: url("https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        background-position: 0;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-self: flex-start;
+        padding: 20px;
+        border-radius: 25px;
+        height: 100%;
+        width: 100%;
+        order: 2;
+        margin: 0;
+  
+        .HoursWrapper,
+        .AddressWrapper,
+        .ContactWrapper {
+          display: flex;
+          flex-direction: column;
+          margin: 5px;
+  
+          .Social {
+            display: flex;
+  
+            .IconLink {
+              color: gainsboro;
+  
+              &:hover {
+                color: black;
+              }
+            }
+          }
+  
+          .Hours {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+  
+        .Text {
+          font-family: "Kodchasan", "Segoe UI";
+          font-weight: 400;
+          color: black;
+          // color: white;
+        }
+  
+        .Email,
+        .Phone {
+          text-decoration: none;
+          color: black;
+          font-weight: 600;
+  
+          &:hover {
+            text-decoration: underline;
+            color: rgb(83, 204, 124);
+          }
+        }
+      }
+  
+      .Map {
+        width: 100%;
+        order: 1;
+      }
+    }
+    @media screen and (min-width: 900px) {
+      .Container {
+        max-width: 1000px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        width: 100%;
+  
+        .Info {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  
