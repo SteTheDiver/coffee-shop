@@ -1,7 +1,6 @@
 # The Coffee Shop - simple neat small website
-______________________________________________
 
-## A simple but neat website for a coffee business created with React and Sass.
+### A simple but neat website for a coffee business created with React and Sass.
 
 ## Table of contents
 * [General info](#general-info)
